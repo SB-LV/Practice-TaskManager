@@ -23,5 +23,9 @@ namespace TaskManager
         }
 
         // You can add more methods or properties as needed
+        public override string ToString()
+        {
+            return $"{Name} - Due: {DueDate} - Status: {(Completed ? "Completed" : "Not Completed")}";
+        }
     }
 }

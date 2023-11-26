@@ -24,6 +24,16 @@ namespace TaskManager
 
         private void BtnAddTask_Click(object sender, EventArgs e)
         {
+ 
+        }
+
+        private void lblTasks_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddTask_Click_1(object sender, EventArgs e)
+        {
             // Get task details from TextBoxes
             string taskName = textBoxTaskName.Text;
             string dueDate = textBoxDueDate.Text;
@@ -47,7 +57,5 @@ namespace TaskManager
             textBoxDueDate.Clear();
             textBoxDescription.Clear();
         }
-
- 
     }
 }
