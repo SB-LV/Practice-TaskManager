@@ -48,5 +48,11 @@ namespace TaskManager
             isCompleted = completed;
             description = desc;
         }
+
+        // Override ToString method for custom representation
+        public override string ToString()
+        {
+            return $"Task: {name}, Due Date: {dateTime}, Status: {IsCompleted}, Description: {TaskDescription}";
+        }
     }
 }
