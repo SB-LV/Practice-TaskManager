@@ -125,6 +125,8 @@
             // 
             // dateTimePckTaskDatetime
             // 
+            this.dateTimePckTaskDatetime.CustomFormat = "yyyy-MM-dd HH:mm";
+            this.dateTimePckTaskDatetime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePckTaskDatetime.Location = new System.Drawing.Point(929, 55);
             this.dateTimePckTaskDatetime.Name = "dateTimePckTaskDatetime";
             this.dateTimePckTaskDatetime.Size = new System.Drawing.Size(200, 22);
