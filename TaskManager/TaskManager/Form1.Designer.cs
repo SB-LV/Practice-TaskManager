@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxTaskList = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTaskName = new System.Windows.Forms.Label();
             this.lblDateTimePck = new System.Windows.Forms.Label();
             this.lblTaskDescription = new System.Windows.Forms.Label();
             this.btnRemoveTask = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnComplete = new System.Windows.Forms.Button();
             this.btnAddTask = new System.Windows.Forms.Button();
             this.txtBoxTaskName = new System.Windows.Forms.TextBox();
             this.dateTimePckTaskDatetime = new System.Windows.Forms.DateTimePicker();
-            this.textBoxTaskDescription = new System.Windows.Forms.TextBox();
+            this.txtBoxTaskDescription = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // listBoxTaskList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(37, 55);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(248, 308);
-            this.listBox1.TabIndex = 0;
+            this.listBoxTaskList.FormattingEnabled = true;
+            this.listBoxTaskList.ItemHeight = 16;
+            this.listBoxTaskList.Location = new System.Drawing.Point(37, 55);
+            this.listBoxTaskList.Name = "listBoxTaskList";
+            this.listBoxTaskList.Size = new System.Drawing.Size(695, 308);
+            this.listBoxTaskList.TabIndex = 0;
             // 
             // label1
             // 
@@ -62,7 +62,7 @@
             // lblTaskName
             // 
             this.lblTaskName.AutoSize = true;
-            this.lblTaskName.Location = new System.Drawing.Point(363, 36);
+            this.lblTaskName.Location = new System.Drawing.Point(793, 36);
             this.lblTaskName.Name = "lblTaskName";
             this.lblTaskName.Size = new System.Drawing.Size(75, 16);
             this.lblTaskName.TabIndex = 3;
@@ -71,7 +71,7 @@
             // lblDateTimePck
             // 
             this.lblDateTimePck.AutoSize = true;
-            this.lblDateTimePck.Location = new System.Drawing.Point(496, 36);
+            this.lblDateTimePck.Location = new System.Drawing.Point(926, 36);
             this.lblDateTimePck.Name = "lblDateTimePck";
             this.lblDateTimePck.Size = new System.Drawing.Size(64, 16);
             this.lblDateTimePck.TabIndex = 4;
@@ -80,7 +80,7 @@
             // lblTaskDescription
             // 
             this.lblTaskDescription.AutoSize = true;
-            this.lblTaskDescription.Location = new System.Drawing.Point(363, 92);
+            this.lblTaskDescription.Location = new System.Drawing.Point(793, 92);
             this.lblTaskDescription.Name = "lblTaskDescription";
             this.lblTaskDescription.Size = new System.Drawing.Size(75, 16);
             this.lblTaskDescription.TabIndex = 5;
@@ -88,68 +88,71 @@
             // 
             // btnRemoveTask
             // 
-            this.btnRemoveTask.Location = new System.Drawing.Point(366, 261);
+            this.btnRemoveTask.Location = new System.Drawing.Point(796, 237);
             this.btnRemoveTask.Name = "btnRemoveTask";
             this.btnRemoveTask.Size = new System.Drawing.Size(105, 48);
             this.btnRemoveTask.TabIndex = 6;
             this.btnRemoveTask.Text = "Remove task";
             this.btnRemoveTask.UseVisualStyleBackColor = true;
+            this.btnRemoveTask.Click += new System.EventHandler(this.btnRemoveTask_Click);
             // 
-            // button2
+            // btnComplete
             // 
-            this.button2.Location = new System.Drawing.Point(366, 331);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 48);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnComplete.Location = new System.Drawing.Point(796, 315);
+            this.btnComplete.Name = "btnComplete";
+            this.btnComplete.Size = new System.Drawing.Size(105, 48);
+            this.btnComplete.TabIndex = 6;
+            this.btnComplete.Text = "Toggle complete";
+            this.btnComplete.UseVisualStyleBackColor = true;
+            this.btnComplete.Click += new System.EventHandler(this.btnComplete_Click);
             // 
             // btnAddTask
             // 
-            this.btnAddTask.Location = new System.Drawing.Point(366, 151);
+            this.btnAddTask.Location = new System.Drawing.Point(796, 151);
             this.btnAddTask.Name = "btnAddTask";
             this.btnAddTask.Size = new System.Drawing.Size(105, 48);
             this.btnAddTask.TabIndex = 6;
             this.btnAddTask.Text = "Add task";
             this.btnAddTask.UseVisualStyleBackColor = true;
+            this.btnAddTask.Click += new System.EventHandler(this.btnAddTask_Click);
             // 
             // txtBoxTaskName
             // 
-            this.txtBoxTaskName.Location = new System.Drawing.Point(366, 55);
+            this.txtBoxTaskName.Location = new System.Drawing.Point(796, 55);
             this.txtBoxTaskName.Name = "txtBoxTaskName";
             this.txtBoxTaskName.Size = new System.Drawing.Size(100, 22);
             this.txtBoxTaskName.TabIndex = 7;
             // 
             // dateTimePckTaskDatetime
             // 
-            this.dateTimePckTaskDatetime.Location = new System.Drawing.Point(499, 55);
+            this.dateTimePckTaskDatetime.Location = new System.Drawing.Point(929, 55);
             this.dateTimePckTaskDatetime.Name = "dateTimePckTaskDatetime";
             this.dateTimePckTaskDatetime.Size = new System.Drawing.Size(200, 22);
             this.dateTimePckTaskDatetime.TabIndex = 8;
             // 
-            // textBoxTaskDescription
+            // txtBoxTaskDescription
             // 
-            this.textBoxTaskDescription.Location = new System.Drawing.Point(366, 111);
-            this.textBoxTaskDescription.Name = "textBoxTaskDescription";
-            this.textBoxTaskDescription.Size = new System.Drawing.Size(100, 22);
-            this.textBoxTaskDescription.TabIndex = 9;
+            this.txtBoxTaskDescription.Location = new System.Drawing.Point(796, 111);
+            this.txtBoxTaskDescription.Name = "txtBoxTaskDescription";
+            this.txtBoxTaskDescription.Size = new System.Drawing.Size(100, 22);
+            this.txtBoxTaskDescription.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBoxTaskDescription);
+            this.ClientSize = new System.Drawing.Size(1313, 450);
+            this.Controls.Add(this.txtBoxTaskDescription);
             this.Controls.Add(this.dateTimePckTaskDatetime);
             this.Controls.Add(this.txtBoxTaskName);
             this.Controls.Add(this.btnAddTask);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnComplete);
             this.Controls.Add(this.btnRemoveTask);
             this.Controls.Add(this.lblTaskDescription);
             this.Controls.Add(this.lblDateTimePck);
             this.Controls.Add(this.lblTaskName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBoxTaskList);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -159,17 +162,17 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxTaskList;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTaskName;
         private System.Windows.Forms.Label lblDateTimePck;
         private System.Windows.Forms.Label lblTaskDescription;
         private System.Windows.Forms.Button btnRemoveTask;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnComplete;
         private System.Windows.Forms.Button btnAddTask;
         private System.Windows.Forms.TextBox txtBoxTaskName;
         private System.Windows.Forms.DateTimePicker dateTimePckTaskDatetime;
-        private System.Windows.Forms.TextBox textBoxTaskDescription;
+        private System.Windows.Forms.TextBox txtBoxTaskDescription;
     }
 }
 

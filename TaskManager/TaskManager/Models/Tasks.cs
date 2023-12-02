@@ -21,15 +21,22 @@ namespace TaskManager.Models
         // Methods
 
         // Add a task to the task list
-        void AddTask(Task task)
+        public void AddTask(Task task)
         {
             tasks.Add(task);
         }
 
         // Remove the task at the specified list index from the task list
-        void RemoveTaskAt(Int32 idx)
+        public void RemoveTaskAt(Int32 idx)
         {
             tasks.RemoveAt(idx);
+        }
+
+
+        // Change the status of the task at the specified list index
+        public void ToggleTaskAt(Int32 idx)
+        {
+            tasks[idx].IsCompleted = !tasks[idx].IsCompleted;
         }
 
         // Return a string representation of the task list
